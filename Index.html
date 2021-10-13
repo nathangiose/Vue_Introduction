@@ -15,6 +15,10 @@
     <div id="app">
         <!-- <h2>I am the template</h2> -->
         <p>{{ title }} - {{ author }} - {{ age }}</p>
+
+        <button v-on:click="age++">Increase Age</button>
+        <button v-on:click="age--">Decrease Age</button> 
+        <div @click="changeTitle('Oathbringer')">Change book title</div>  
     </div>
     
 
