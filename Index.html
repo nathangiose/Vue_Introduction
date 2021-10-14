@@ -8,6 +8,9 @@
 
     <!-- VUE FRAMEWORK -->
     <script src="https://unpkg.com/vue@3.0.2"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <h1>Nathan John Giose</h1>
@@ -29,6 +32,14 @@
         </button>
 
         <div v-show="showBooks">currently showing books</div>
+
+        <br>
+        <!-- mouse events -->
+        <div class="box" @mouseover="handleEvent($event, 5)">mouseover (enter)</div> <!-- I'm explicitly saying what event I want parsed in -->
+        <div class="box" @mouseleave="handleEvent">mouseleave (leave)</div>
+        <div class="box" @dblclick="handleEvent">double click</div>
+        <div class="box" @mousemove="handleMousemove">position - {{ x }} {{ y }}</div>
+
     </div>
     
 

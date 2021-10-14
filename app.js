@@ -6,7 +6,9 @@ const app = Vue.createApp({
             showBooks: true, //this is to show and hide the information
             title: 'The Final Empire',
             author: 'Brandon Sanderson',
-            age: 45
+            age: 45,
+            x: 0,
+            y: 0
 
         }
     },
@@ -20,6 +22,16 @@ const app = Vue.createApp({
         },
         toggleShowBooks() {
             this.showBooks = !this.showBooks //this toggles it from true to false and vice
+        },
+        handleEvent(e, data) {
+            console.log(e, e.type)
+            if (data) {
+                console.log(data)
+            }
+        },
+        handleMousemove(e) {
+            this.x = e.offsetX
+            this.y = e.offsetY
         }
         
     }
