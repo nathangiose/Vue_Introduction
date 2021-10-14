@@ -4,6 +4,19 @@ const app = Vue.createApp({
     data() {
         return{
             showBooks: true, //this is to show and hide the information
+            books : [{
+                title: 'Name of the wind',
+                author: 'Patrick Rothfuss'
+            },
+            {
+                title: 'The way of Kings',
+                author: 'Brandon Sanderson'
+            },
+            {
+                title: 'The Final Empire',
+            author: 'Brandon Sanderson',
+            }
+        ],
             title: 'The Final Empire',
             author: 'Brandon Sanderson',
             age: 45,
