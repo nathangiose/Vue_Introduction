@@ -3,22 +3,27 @@ const app = Vue.createApp({
     //data, funtions, component templates
     data() {
         return{
+            url : 'https://github.com/nathangiose',
             showBooks: true, //this is to show and hide the information
             books : [{
                 title: 'Name of the wind',
-                author: 'Patrick Rothfuss'
+                author: 'Patrick Rothfuss',
+                img : 'assets/2021-08-10 (1).png'
             },
             {
                 title: 'The way of Kings',
-                author: 'Brandon Sanderson'
+                author: 'Brandon Sanderson',
+                img : 'assets/2013-dodge-charger-r-t-dodge-charger-daytona-car-dodge-daytona-png-favpng-BjFtEpDFeMKpr7GJQJpsLLHNz_t.jpg'
             },
             {
                 title: 'The Final Empire',
             author: 'Brandon Sanderson',
+            img : 'assets/2013-dodge-charger-se-used-car-price-png-favpng-u4hsDS0Y8rg5NHJXcHKTM4yW5_t.jpg'
             }
         ],
             title: 'The Final Empire',
             author: 'Brandon Sanderson',
+            img : 'assets/2021-08-10 (1).png',
             age: 45,
             x: 0,
             y: 0
