@@ -8,17 +8,20 @@ const app = Vue.createApp({
             books : [{
                 title: 'Name of the wind',
                 author: 'Patrick Rothfuss',
-                img : 'assets/2021-08-10 (1).png'
+                img : 'assets/2021-08-10 (1).png',
+                isFav: true
             },
             {
                 title: 'The way of Kings',
                 author: 'Brandon Sanderson',
-                img : 'assets/2013-dodge-charger-r-t-dodge-charger-daytona-car-dodge-daytona-png-favpng-BjFtEpDFeMKpr7GJQJpsLLHNz_t.jpg'
+                img : 'assets/2013-dodge-charger-r-t-dodge-charger-daytona-car-dodge-daytona-png-favpng-BjFtEpDFeMKpr7GJQJpsLLHNz_t.jpg',
+                isFav: false
             },
             {
                 title: 'The Final Empire',
             author: 'Brandon Sanderson',
-            img : 'assets/2013-dodge-charger-se-used-car-price-png-favpng-u4hsDS0Y8rg5NHJXcHKTM4yW5_t.jpg'
+            img : 'assets/2013-dodge-charger-se-used-car-price-png-favpng-u4hsDS0Y8rg5NHJXcHKTM4yW5_t.jpg',
+            isFav: true
             }
         ],
             title: 'The Final Empire',
